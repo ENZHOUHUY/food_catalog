@@ -2,9 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:food_catalog/core/constants/app_constants.dart';
 import 'package:food_catalog/core/routes/app_router.dart';
 import 'package:food_catalog/core/theme/app_theme.dart';
+import 'package:food_catalog/injection.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(buildApp());
 }
 
 class MyApp extends StatelessWidget {
