@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:food_catalog/core/constants/app_constants.dart';
 import 'package:food_catalog/core/routes/app_router.dart';
 import 'package:food_catalog/core/theme/app_theme.dart';
 
@@ -15,7 +16,8 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       initialRoute: AppRouter.catalog,
       routes: AppRouter.routes,
-      theme: AppTheme.lightTheme
+      theme: AppTheme.lightTheme,
+      title: AppConstants.defTitle,
     );
   }
 }
